@@ -3,83 +3,227 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <title>Enygma</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/c9b87a4bee.js" crossorigin="anonymous"></script>
+    <script src="apps.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
 </head>
 
 <body>
-    <div>
-        <header>
-            <div class="respmenu">
-                <input type="checkbox" id="check" />
-                <label for="check" class="checkbtn">
-                    <i class="fa-solid fa-bars"></i>
-                </label>
-            <nav class="navbar">
-                <ul>
-                    <li><a href=index.html><img src="img/ENYGMA.png" alt="logo"></a></li>
-                    <li><a href="index.html">Ofertas</a></li>
-                    <li><a href="index.html">De temporada</a></li>
-                    <li><a href="index.html">Camisetas</a></li>
-                    <li><a href="index.html">Combos</a></li>
-                    <li><a href="index.html">Gorras</a></li>
-                    <li><a href="index.html">Accesorios</a></li>
-                </ul>
-            </nav>
-        </div>
-        </header> 
-        <main id="SecciónPrincipal"></main>
-        <section class="AcercaDeMi">
-            <div id="titulo2">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Acerca de mi</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Autor</a>
+                        </li>
+                        <!-- Elementos adicionales sin enlaces -->
+                        <li class="nav-item">
+                            <a class="nav-link">Ofertas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">De temporada</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Camisetas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Combos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Gorras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Accesorios</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container-fluid">
+        <section class="AcercaDeMi row">
+            <div class="col-md-12">
                 <h2>Acerca de nosotros</h2>
                 <p id="parrafo">En Enygma, somos más que una tienda en línea de camisetas personalizadas y accesorios deportivos. Somos una comunidad de apasionados por el deporte y la moda, fusionando el estilo y la individualidad en cada prenda que creamos.</p>
             </div>
         </section>
-    </div>
-    <div id="lista">
-        <div>
-            <p><b>Explora Nuestra Colección Exclusiva</b></p>
-        </div>
-        <ul>
-            <li><a href="enlace_camisetas_exclusivas.html">Camisetas</a></li>
-            <li><a href="enlace_gorras.html">Gorras</a></li>
-            <li><a href="enlace_chaquetas.html">Chaquetas</a></li>
-            <li><a href="enlace_buzos.html">Buzos</a></li>
-            <li><a href="enlace_crop_tops.html">Crop Tops/Sleeveless (Esqueletos)</a></li>
-        </ul>
-        </div>
-        <div class="img-descub">
-            <img src="img/camisas1.jpg" alt="camisas1">
-            <img src="img/camisas2.jpg" alt="camisas2">
-            <img src="img/camisas3.jpg" alt="camisas3">
-        </div>
-        <div id="Ofertas">
-            <p><b>¡Grandes Descuentos en Nuestra Colección de Moda!</b></p>
-        <ul>
-            <li>Productos en Descuento</li>
-            <li>Duración de nuestra Oferta</li>
-            <li>No te quedes sin nuestros productos exclusivos</li>
-            <li>Pueden ser un excelente regalo</li>
-            <li>Envios a todo el país</li>
-            <li>Políticas de Devolución</li>
-            <li>Contactanos</li>
-        </ul>
-    </div> 
+
+        <section class="row">
+            <div id="lista" class="col-md-4">
+                <p><b>Explora Nuestra Colección Exclusiva</b></p>
+                <ul>
+                    <li><a href="enlace_camisetas_exclusivas.html">Camisetas</a></li>
+                    <li><a href="enlace_gorras.html">Gorras</a></li>
+                    <li><a href="enlace_chaquetas.html">Chaquetas</a></li>
+                    <li><a href="enlace_buzos.html">Buzos</a></li>
+                    <li><a href="enlace_crop_tops.html">Crop Tops/Sleeveless (Esqueletos)</a></li>
+                </ul>
+            </div>
+
+            <div id="imagenCarrusel" class="carousel slide col-md-8" data-bs-ride="carousel">
+                <!-- Indicadores de carrusel -->
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#imagenCarrusel" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#imagenCarrusel" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#imagenCarrusel" data-bs-slide-to="2"></li>
+                    <li data-bs-target="#imagenCarrusel" data-bs-slide-to="3"></li>
+                    <li data-bs-target="#imagenCarrusel" data-bs-slide-to="4"></li>
+                </ol>
+            
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/oversize.jpg" class="d-block w-100" alt="Oversize">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Camisetas Oversize</h5>
+                            <p>Experimenta un estilo fresco y único.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/gorra.jpg" class="d-block w-100" alt="Gorras">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Gorras personalizadas.</h5>
+                            <p>Deja que tu estilo hable por ti con elegancia.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/chaqueta.jpg" class="d-block w-100" alt="Chaquetas">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Chaquetas</h5>
+                            <p>Enfrenta el frío de la ciudad con calidez y estilo.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/buzo.jpg" class="d-block w-100" alt="Buzos">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Hoddie/Buzo</h5>
+                            <p>Descubre la elegancia del misterio.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/esqueleto.jpg" class="d-block w-100" alt="Esqueletos">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Camisetas sin mangas</h5>
+                            <p>Sigue tu progreso y muestra tu esencia.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Controles de carrusel -->
+                <a class="carousel-control-prev" href="#imagenCarrusel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#imagenCarrusel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" ariahidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </a>
+            </div>
+            
+        </section>
+
+        <section class="row">
+            <div id="Ofertas" class="col-md-4">
+                <p><b>¡Grandes Descuentos en Nuestra Colección de Moda!</b></p>
+                <ul>
+                    <li>Productos en Descuento</li>
+                    <li>Duración de nuestra Oferta</li>
+                    <li>No te quedes sin nuestros productos exclusivos</li>
+                    <li>Pueden ser un excelente regalo</li>
+                    <li>Envíos a todo el país</li>
+                    <li>Políticas de Devolución</li>
+                    <li>Contactanos</li>
+                </ul>
+            </div>
+
+            <div class="form-header col-md-8">
+                <h1>Contacto</h1>
+                <p><em>¡Esperamos tu consulta!</em></p>
+                <form action="" method="get" class="formulario">
+                    <div class="form-row">
+                        <label for="nombre">Nombre</label>
+                        <input id="nombre" name="nombre" type="text" placeholder="Escribe aqui tus nombres y apellidos"/>
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input
+                            id="email"
+                            name="email"
+                            type="email"
+                            placeholder="Escribe aqui tu dirección de correo electronico"
+                        />
+                    </div>
+                    <div class="form-row">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" placeholder="Dejanos sabercomo podemos ayudarte"></textarea>
+                    </div>
+                        <!-- Agregar un botón de enviar -->
+    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
     <footer id="piedepagina">
-        <h3>Categorias</h3>
-        <ul>
-            <li><a href="index.html">Ofertas</a></li>
-            <li><a href="index.html">De temporada</a></li>
-            <li><a href="index.html">Camisetas</a></li>
-            <li><a href="index.html">Combos</a></li>
-            <li><a href="index.html">Gorras</a></li>
-            <li><a href="index.html">Accesorios</a></li>
-        </ul>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h3>Categorías</h3>
+                    <ul class="list-unstyled">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">Productos</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Camisetas</a></li>
+                                <li><a href="#">Gorras</a></li>
+                                <li><a href="#">Buzos</a></li>
+                                <li><a href="#">Chaquetas</a></li>
+                                <li><a href="#">Ropa deportiva</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">Promociones</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Navidad</a></li>
+                                <li><a href="#">Sale</a></li>
+                                <li><a href="#">Combos</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">Multimedia</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Videos</a></li>
+                                <li><a href="#">Artículos</a></li>
+                                <li><a href="#">Fotografías</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">Contáctenos</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="mailto:correo@tudominio.com">Email</a></li>
+                                <li><a href="#">Dirección</a></li>
+                                <li><a href="#">Teléfono</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </footer>
-    <script src="apps.js"></script>
+    
 </body>
 
 </html>

@@ -1,246 +1,271 @@
-body{
-    background-color: #0d1117;
-    padding: 0px;
-    margin: 10px;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
-    max-width: 1200px; /* Puedes ajustar este valor según tus necesidades */
-    margin: 0 auto; /* Esto centra el contenido en la página */
-    padding-bottom: 80px; /* Ajusta el valor según el tamaño del pie de página */
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
 }
 
-/* Estilo para la cabecera (header) */
+.container-fluid {
+    padding: 20px;
+}
+
+/* Estilos para el encabezado (header) y la barra de navegación */
 header {
-    display: flex; /* flexbox para hacer la barra de navegación horizontal */
-    align-items: center; /* Alinea verticalmente los elementos */
-    padding: 0px; /* Espacio alrededor del contenido del encabezado */
+    background-color: #343a40;
+    color: #fff;
+    padding: 0px;
 }
 
-header img{
-    width: 65px;
-    height: auto;
+.navbar-brand {
+    font-size: 32px;
+    font-weight: bold;
 }
 
-/* Estilo para la barra de navegación (navbar) */
-nav{
-    background-color: #24292f;
-    color: #afb8c1;
-    width: 100%; /* Ancho del 100% para ocupar todo el ancho del header */
-    position: relative; /* ajusta la posición de la barra*/
+.nav-link {
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px; /* Agregar un borde redondeado */
+    transition: background-color 0.5s; /* Agregar animación de 0.5 segundos */
 }
 
-nav ul {
-    list-style: none; /* Elimina los puntos de la lista "viñetas" */
-    display: flex; /* Hace que los elementos de la lista sean horizontales */
-    justify-content: flex-start; /* centrar horozontal */
-    align-items: center; /* centrar vertical */
+/* Estilo para el hover (al pasar el mouse por encima) */
+.nav-link:hover {
+    background-color: #555; /* Cambiar el color de fondo en hover */
 }
 
-nav li {
-    margin-right: 20px; /* Espacio entre elementos de la lista */
-}
-nav a{
-    text-decoration: none;
-    color: #afb8c1;
-}
 
-/* Estilo cuando el cursor pasa sobre el enlace de navbar*/
-nav a:hover{
-    background: #32383f; /* Color sombreado elementos del navbar */
-}
-
-nav ul li a {
-    display: block;
-    padding: 0.2rem 1rem; /* Tamaño elementos de lista para navbar */ 
-    transition: all 0.4s linear; /* Tiempo transition cuando deslizo el cursor */
-    border-radius: 6px; /* Borde de la forma cuando paso el cursor sobre navbar */
-}
-
-/* Estilo para los parrafos (p) */
-p{
-    background-color: #0d1117;
-    padding: 0.2em;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    display: block;
-}
-.AcercaDeMi{ /* Estilo para los elementos contender AcercaDeMi (AcercaDeMi) */
-    background-color: #161b22;
-    color: #e6ede6; /* Color del texto de parrafos */
-    padding: 0.2em;
-}
-#Ofertas{ /* Estilo para los elementos contender AcercaDeMi (AcercaDeMi) */
-    background-color: #161b22;
-    color: #e6ede6; /* Color del texto de parrafos */
-    padding: 0.2em;
-}
-/* Estilo para el contenedor lista (lista) */
-#lista{
-    background-color: #161b22;
-    color: #e6ede6; /* Color del texto de parrafos */
-    padding: 0.2em;
-}
-
-/* Estilo para que los contenedores queden en bloques*/
-#lista{
-    width: 65%; /* Establece el ancho de cada bloque según tus necesidades */
-    float: left; /* Hace que los bloques se coloquen uno al lado del otro */
-    margin: 10px; /* Agrega un margen entre los bloques para separarlos */
-}
-
-.Categorias{
-    width: 25%;
-    float: left;
-    margin: 10px;
-}
-#Ofertas{
-    width: 65%;
-    float: left;
-    margin: 10px;
-}
-
-.AcercaDeMi{
-    width: 65%;
-    float: left;
-    margin: 10px;
-}
-.img-descub{
-    width: 65%;
-    float: left;
-    margin: 10px;
-}
-
-/* Estilo para imagenes en contenedor (img-descub) */
-.img-descub img{ /* La clase es ek equivalente de la etiqueta podria ser .medusa o div, medusa fue el nombre que yo di */
-    height: auto;
-    width: 250px;
-    justify-content: center;
-}
-/*Estilos para el footer*/
-footer {
-    position: relative;
-    left: 0;
-    bottom: 0;
-    display: table;
-    width: 100%;
-    height: 180px;
-    background-color: #24292f;
-    color: #afb8c1;
+/* Estilos para la sección AcercaDeMi */
+.AcercaDeMi {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    padding: 20px;
 }
 
-#piedepagina h3 {
+.AcercaDeMi h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#parrafo {
     font-size: 18px;
+    margin: 0 auto;
+    max-width: 800px;
 }
 
-#piedepagina ul {
+/* Estilos para la lista de elementos */
+#lista {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+}
+
+#lista p {
+    font-size: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+#lista ul {
     list-style: none;
     padding: 0;
 }
 
-#piedepagina li {
-    display: inline;
-    margin: 0 10px;
+#lista li {
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
-#piedepagina a {
+/* Estilos para las imágenes */
+.img-descub {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.img-descub img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Estilos para la sección Ofertas */
+#Ofertas {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+}
+
+#Ofertas p {
+    font-size: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+#Ofertas ul {
+    list-style: none;
+    padding: 0;
+}
+
+#Ofertas li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para el formulario de contacto */
+.form-header {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+}
+
+.form-header h1 {
+    font-size: 24px;
+    margin: 0;
+    padding: 10px;
+}
+
+.form-header p {
+    font-size: 18px;
+}
+
+.formulario label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Estilos para el pie de página (footer) */
+#piedepagina {
+    background-color: #343a40;
+    color: #fff;
+    padding: 75px;
+    text-align: center;
+}
+
+#piedepagina h3 {
+    font-size: 22px;
+    margin: 0;
+}
+
+#piedepagina list-unstyled {
+    display: block;
+    background-color: #343a40;
+    color: #fff;
+    align-items: center;
+}
+
+#piedepagina .list-unstyled {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+#piedepagina .list-unstyled .dropdown {
+    margin: 10px;
+    position: relative; /* Debe ser "relative", no "flex" */
+}
+
+#piedepagina .list-unstyled a {
     text-decoration: none;
-    color: #afb8c1;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px; /* Agregar un borde redondeado */
+    transition: background-color 0.5s; /* Agregar animación de 0.5 segundos */
 }
 
-/* Estilo para los vínculos al pasar el ratón sobre ellos */
-#piedepagina a:hover {
-    text-decoration: underline;
+#piedepagina .list-unstyled .dropdown:hover a {
+    color: #ffffff;
+    border-radius: 5px; /* Agregar un borde redondeado */
+    transition: background-color 0.5s; /* Agregar animación de 0.5 segundos */
 }
 
-/*Barra navegacion responsive*/
-
-#check{
+#piedepagina .list-unstyled .dropdown-menu {
+    background-color: #343a40;
+    border: none;
+    position: flex;
+    top: 100%;
+    left: 0;
     display: none;
 }
 
-.checkbtn {
-    font-size: 25px;
-    color: aqua;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
+#piedepagina .list-unstyled .dropdown:hover .dropdown-menu {
+    display: flex;
 }
 
-/* Estilos para pantallas más pequeñas (hasta 768px) */
+#piedepagina .list-unstyled .dropdown-menu a {
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+#piedepagina .list-unstyled .dropdown-menu a:hover {
+    background-color: #252525;
+}
+
+
+
+/* Bootstrap : Hacer que el dropdown se despliegue al pasar el mouse */
+.dropdown:hover .dropdown-menu {
+    display: block !important;
+}
+
+/* Estilos para la barra de navegación en dispositivos móviles */
 @media (max-width: 768px) {
-    /* Aquí puedes escribir los estilos que se aplicarán en pantallas más pequeñas */
-    .AcercaDeMi {
-        display: flex; /* Esto ocultará la barra de navegación en pantallas más pequeñas */
-        flex: auto;
-        background-color: rgb(19, 18, 18); /* Si deseas cambiar el color de fondo, puedes hacerlo aquí o eliminar esta línea si no es necesario. */
-      }
-  
-    .img-descub {
-        display: block; /* Esto ocultará la barra de navegación en pantallas más pequeñas */
-        background-color: rgb(27, 22, 94); /* Si deseas cambiar el color de fondo, puedes hacerlo aquí o eliminar esta línea si no es necesario. */
-      }
-
-    .checkbtn {
-        display: block; /* Para que muestre el boton de la hamburguesa */
-        position: left;
-    }
-    nav {
-        position: relative;
+    .navbar-toggler-icon {
+        color: #fff;
     }
 
-    nav ul{
-        display: block;
-        position: fixed;
-        width: 100%;
-        height: 150vh;
-        background-color: rgb(51, 53, 53);
-        text-align: center;
-        top: 50px;
-        left: 100%;
-        transition: all 0.5s;
+    .navbar-collapse {
+        background-color: #343a40;
     }
 
-    #check:checked ~ nav ul {
-        left: 0%;
+    .navbar-nav {
+        flex-direction: column;
     }
 
-    nav ul li{
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
+    .navbar-nav .nav-link {
+        margin: 5px 0;
     }
-    nav ul li a {
-        font-size: 20px;
-    }
-  }
+}
 
-@media (min-width: 769px) {
-    /* Aquí puedes escribir los estilos que se aplicarán en pantallas más pequeñas */
-    .navbar {
-      display: flex; /* Esto ocultará la barra de navegación en pantallas más pequeñas */
-      background-color: rgb(104, 93, 102); /* Si deseas cambiar el color de fondo, puedes hacerlo aquí o eliminar esta línea si no es necesario. */
-    }
-    .AcercaDeMi {
-        display: flex; /* Esto ocultará la barra de navegación en pantallas más pequeñas */
-        flex: auto;
-        background-color: rgb(179, 35, 155); /* Si deseas cambiar el color de fondo, puedes hacerlo aquí o eliminar esta línea si no es necesario. */
-      }
-    .checkbtn {
-        display: none; /* àra que muestre el boton de la hamburguesa */
-    }
+/* Estilos para el botón de enviar */
+button[type="submit"] {
+    background-color: #343a40; /* Color de fondo */
+    color: #fff; /* Color de texto */
+    font-size: 18px; /* Tamaño de fuente */
+    padding: 10px 20px; /* Espacio alrededor del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Borde redondeado */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+}
 
-    .img-descub {
-        display: block; /* Esto ocultará la barra de navegación en pantallas más pequeñas */
-        background-color: rgb(179, 35, 155); /* Si deseas cambiar el color de fondo, puedes hacerlo aquí o eliminar esta línea si no es necesario. */
-      }
-  }
-
-
-  @media (min-width: 769px) {
-    /* Aquí puedes escribir los estilos que se aplicarán en pantallas más pequeñas */
-
-  }
+/* Estilo cuando se pasa el ratón por encima del botón */
+button[type="submit"]:hover {
+    background-color: #555; /* Cambia el color de fondo al pasar el ratón */
+}
